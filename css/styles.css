@@ -134,15 +134,14 @@ dynamic script
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-  color: #000000;
 }
 .autoTyping h1 {
   font-size: 80px;
   font-weight: 600;
-  padding: 40px;
+  padding: 20px;
 }
 .dynamicText {
   color: rgb(255, 0, 0);
@@ -170,8 +169,11 @@ projects bootstrap5 cards
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 150px;
+  flex-wrap: wrap;
+  padding: 50px;
+  height: 100vh;
 }
+
 /*
 sections
 */
@@ -198,4 +200,33 @@ quote
 section .aboutMe {
   padding: 20px;
   font-size: medium;
+}
+/*
+image-description
+*/
+.image-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.pic * {
+  height: 314px;
+  width: 252px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px #555;
+}
+.c1 {
+  width: 65%;
+}
+.desc {
+  font-size: larger;
+}
+.get-in-touch {
+  font-size: medium;
+}
+
+section:nth-child(even) {
+  background-color: rgb(242, 245, 247);
 }
